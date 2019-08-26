@@ -310,7 +310,7 @@ var abp = abp || {};
             setTimeout(function () {
                 if (element) {
                     element.classList.remove('abp-block-area-disappearing');
-                    element.parentElement.removeChild(element);
+                    element.remove();  //element.parentElement.removeChild(element);
                 }
             }, 250);
         }
